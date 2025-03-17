@@ -1,1 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Claim Destroyer</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px;
+        }
+        .box {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+            width: 100%;
+            max-width: 800px;
+        }
+        .box h2, .box h3 {
+            color: #007BFF;
+        }
+        .box p {
+            margin-bottom: 20px;
+        }
+        form {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        form div {
+            margin-bottom: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        form input, form textarea {
+            width: calc(100% - 30px); /* Adjust width to account for padding */
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        form button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Claim Destroyer</h1>
+    </header>
+    <div class="container">
+        <section class="box about">
+            <h2>Meet The Claim Destroyer</h2>
+            <p>Hello! I'm Greg, The Claim Destroyer. With over 6 years of experience in various dental positions, starting as a Patient Coordinator and working my way throughout the industry to Office Manager, Data Analyst, Head of Credentialing, and now dedicating my time to helping dental offices streamline their claim processes and maximize their revenue. My expertise includes claim submission, follow-up, payment posting, denial management and even credentialing. In addition to my knowledge of the dental industry, I also specialize in automation without the use of AI. Simplifying these processes allows us to work together to ensure your claims are handled efficiently and effectively.</p>
+        </section>
+        <section class="box">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Insurance Verification</h3>
+                <p>We verify patient insurance information to ensure that claims are submitted with accurate and up-to-date information.</p>
+            </div>
+            <div class="service">
+                <h3>Claim Submission</h3>
+                <p>We handle the submission of all your dental claims to ensure they are processed quickly and accurately.</p>
+            </div>
+            <div class="service">
+                <h3>Claim Follow Up</h3>
+                <p>We follow up on submitted claims to ensure they are processed and paid in a timely manner.</p>
+            </div>
+            <div class="service">
+                <h3>Payment Posting</h3>
+                <p>We post payments to your accounts to keep your records up to date and accurate.</p>
+            </div>
+            <div class="service">
+                <h3>Denial Management</h3>
+                <p>We manage denied claims to ensure they are corrected and resubmitted for payment.</p>
+            </div>
+        </section>
+        <section class="box">
+            <h2>Contact Us</h2>
+            <form action="mailto:Greg@TheClaimDestroyer.com" method="post" enctype="text/plain">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
 
