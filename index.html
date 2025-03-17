@@ -4,127 +4,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Claim Destroyer</title>
-    <style>
-        body {
-            font-family: 'Helvetica Neue', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 20px 0;
-            text-align: center;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-        }
-        .box {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            margin-bottom: 40px;
-            width: 100%;
-            max-width: 800px;
-        }
-        .box h2, .box h3 {
-            color: #007BFF;
-        }
-        .box p {
-            margin-bottom: 20px;
-        }
-        form {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-        }
-        form div {
-            margin-bottom: 20px;
-        }
-        form label {
-            display: block;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-        form input, form textarea {
-            width: calc(100% - 30px); /* Adjust width to account for padding */
-            padding: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        form button {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 15px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 16px;
-        }
-        form button:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
     <header>
-        <h1>The Claim Destroyer</h1>
+        <div class="container">
+            <div class="logo">
+                <img src="attachments/image.png" alt="The Claim Destroyer Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="container">
-        <section class="box about">
+
+    <section id="hero">
+        <div class="container">
+            <img src="attachments/The Claim Destroyer.gif" alt="The Claim Destroyer" class="hero-img">
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
             <h2>Meet The Claim Destroyer</h2>
-            <p>Hello! I'm Greg, The Claim Destroyer. With over 6 years of experience in various dental positions, starting as a Patient Coordinator and working my way throughout the industry to Office Manager, Data Analyst, Head of Credentialing, and now dedicating my time to helping dental offices streamline their claim processes and maximize their revenue. My expertise includes claim submission, follow-up, payment posting, denial management and even credentialing. In addition to my knowledge of the dental industry, I also specialize in automation without the use of AI. Simplifying these processes allows us to work together to ensure your claims are handled efficiently and effectively.</p>
-        </section>
-        <section class="box">
-            <h2>Our Services</h2>
-            <div class="service">
-                <h3>Insurance Verification</h3>
-                <p>We verify patient insurance information to ensure that claims are submitted with accurate and up-to-date information.</p>
+            <div class="about-content">
+                <div class="profile-picture">
+                    <img src="attachments/profile.png" alt="Greg - The Claim Destroyer">
+                </div>
+                <div class="about-text">
+                    <p>I'm Greg Kostelac, and I am here to help you achieve your goals. With over six years in the dental industry, I've held roles from Patient Coordinator to Head of Credentialing, gaining comprehensive expertise in claim management. My skills encompass claim submission, follow-up, payment posting, denial management, and credentialing. I specialize in streamlining these processes through automation, without relying on AI, to maximize your revenue and ensure efficient claim handling.</p>
+                    <p>Choosing to outsource your any part of your revenue cycle management is difficult, and I understand that. I provide 100% transparancy to my clients so that you know exactly what you are getting with my services. Let me take care of your insurance issues so you can focus on patient care. If you aren't happy, I am not happy.</p>
+                </div>
             </div>
-            <div class="service">
-                <h3>Claim Submission</h3>
-                <p>We handle the submission of all your dental claims to ensure they are processed quickly and accurately.</p>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <div class="container">
+            <h2>My Services</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="service-card">
+                        <h3>Insurance Verification</h3>
+                        <p>Patient insurance benefits are verified 1-2 weeks out, rechecking eligibility 1-3 days prior to the appointment. <br><br> Benefits are input directly directly into your PMS, and coverage information is corrected when receiving claim payments. <br><br> Click here to see an example of the standardized form I upload straight to your PMS.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Claim Submission</h3>
+                        <p>Claims are submittied daily for the day prior, giving providers time to finish notes at the end of the day. This ensures all information required for your claim is sent <i>the first time</i>. This increases the clean claim rate and gets you paid faster, decreasing your AR days.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Claim Follow Up</h3>
+                        <p>Claims are followed up on by running an outstanding claims report weekly and using a proprietary formula to calculate a "risk score." This risk score is determined by many variables including the dollar amount of the claim as well as timely filing.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Payment Posting</h3>
+                        <p>Payments are posted directly to ledgers according to EOBs and applicable non-covered services laws, and EOBs are uploaded into your PMS so you have access to all the information to answer patient concerns easily.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>EFTs/ERAs</h3>
+                        <p>I always recommend signing up for EFTs/ERAs! A common misconception is that this costs extra money; however, it does not have to. Insurance companies are requred to offer free EFTs in some way shape or form! This does not exclude them from also offering a paid service, such as Zelis, but means you just have to know where to look!</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Denial Management</h3>
+                        <p>Denials happen! It is the insurance companies way of earning interest off of your well deserved money before having to pay it out. For any denied claim, it is determined if the claim is payable and, if it is, it is resubmitted. If it is not payable, the reasons why are documented, and feeback is provided to the office to decrease the amount of denials going forward.</p>
+                    </div>
+                </div>
+                <button class="carousel-button prev"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-button next"><i class="fas fa-chevron-right"></i></button>
             </div>
-            <div class="service">
-                <h3>Claim Follow Up</h3>
-                <p>We follow up on submitted claims to ensure they are processed and paid in a timely manner.</p>
-            </div>
-            <div class="service">
-                <h3>Payment Posting</h3>
-                <p>We post payments to your accounts to keep your records up to date and accurate.</p>
-            </div>
-            <div class="service">
-                <h3>Denial Management</h3>
-                <p>We manage denied claims to ensure they are corrected and resubmitted for payment.</p>
-            </div>
-        </section>
-        <section class="box">
-            <h2>Contact Us</h2>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
             <form action="mailto:Greg@TheClaimDestroyer.com" method="post" enctype="text/plain">
-                <div>
+                <div class="form-group">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
                 </div>
-                <button type="submit">Send</button>
+                <button type="submit" class="btn">Send</button>
             </form>
-        </section>
-    </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 The Claim Destroyer</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
-
