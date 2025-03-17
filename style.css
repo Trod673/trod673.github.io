@@ -213,3 +213,32 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    #about .about-content {
+        flex-direction: column; /* Stack profile picture above paragraph */
+        text-align: center; /* Center text */
+    }
+
+    .carousel-container {
+        padding: 0; /* Remove padding for mobile */
+    }
+
+    .carousel-track {
+        flex-direction: column; /* Stack service cards vertically */
+    }
+
+    .service-card {
+        flex: 1 0 100%; /* Make service cards full width */
+        margin-bottom: 20px; /* Add margin between cards */
+    }
+
+    .carousel-button {
+        display: none; /* Hide carousel buttons on mobile */
+    }
+}
