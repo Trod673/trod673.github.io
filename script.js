@@ -62,4 +62,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
     calculateCarousel();
     updateButtons();
+
+    // Modal functionality
+    const pricingLink = document.getElementById('pricing-link');
+    const modal = document.getElementById('pricing-modal');
+    const closeButton = document.querySelector('.close-button');
+
+    pricingLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        modal.style.display = 'block';
+    });
+
+    closeButton.addEventListener('click', function() {
+        modal.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(e) {
+        if (e.target == modal) {
+            modal.style.display = 'none';
+        }
+    });
 });
