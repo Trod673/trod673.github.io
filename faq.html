@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - The Claim Destroyer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="attachments/image.png" alt="The Claim Destroyer Logo"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="#pricing" id="pricing-link">Pricing</a></li>
+                    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScCqv9ySffWEi9xEvzsZ7uD_pbVKzuPTvVFiFTLJU5hva_NAQ/viewform?usp=header">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="faq" class="section">
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="faq-question">What services do you offer?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>We offer a range of services including insurance verification, claim submission, claim follow-up, payment posting, denial management, credentialing, and fee schedule administration.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How do you handle claim submissions?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Claims are submitted daily for the day prior, giving providers time to finish notes at the end of the day. This ensures all information required for your claim is sent the first time, increasing the clean claim rate and getting you paid faster.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is your pricing structure?<i class="fas fa-chevron-down"></i></button>
+                <div class="faq-answer">
+                    <p>Our pricing is all-inclusive and based on a percentage of insurance collections. A one-time setup fee of $500 applies per office, and a $1,000 monthly minimum applies.</p>
+                </div>
+            </div>
+            <!-- Add more FAQ items as needed -->
+        </div>
+    </section>
+
+    <!-- Pricing Modal -->
+    <div id="pricing-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 style="text-align: center;">Pricing</h2>
+            <ul><li>Pricing is all-inclusive and is based on a percentage of <i><b>insurance collections.</b></i></li><li>A one-time setup fee of $500 applies per office.</li><li>A $1,000 monthly minimum applies.</li></ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Insurance Collections</th>
+                        <th>% of Ins Collections</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>$0+</td>
+                        <td>7%</td>
+                    </tr>
+                    <tr>
+                        <td>$25,000+</td>
+                        <td>6.25%</td>
+                    </tr>
+                    <tr>
+                        <td>$50,000+</td>
+                        <td>5.5%</td>
+                    </tr>
+                    <tr>
+                        <td>$100,000+</td>
+                        <td>4.75%</td>
+                    </tr>
+                    <tr>
+                        <td>$200,000+</td>
+                        <td>4%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>The Claim Destroyer &trade;<br>&copy; 2023 - 2025</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('pricing-link').addEventListener('click', function(event) {
+            event.preventDefault();
+            document.getElementById('pricing-modal').style.display = 'block';
+        });
+
+        document.querySelector('.close-button').addEventListener('click', function() {
+            document.getElementById('pricing-modal').style.display = 'none';
+        });
+
+        window.addEventListener('click', function(event) {
+            if (event.target == document.getElementById('pricing-modal')) {
+                document.getElementById('pricing-modal').style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
