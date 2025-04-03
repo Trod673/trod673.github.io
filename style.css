@@ -94,7 +94,7 @@ nav ul li a:hover {
     }
 
     .menu-toggle {
-        display: block; /* Show the menu button on mobile */
+        display: block; /* Show the hamburger menu button on mobile */
         background-color: #0091f2;
         color: #fff;
         border: none;
@@ -103,6 +103,10 @@ nav ul li a:hover {
         cursor: pointer;
         text-align: center;
         width: 100%;
+    }
+
+    .menu-toggle i {
+        font-size: 24px; /* Adjust the size of the hamburger icon */
     }
 }
 
