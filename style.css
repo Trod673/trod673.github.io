@@ -72,6 +72,10 @@ nav ul li a:hover {
         align-items: flex-start;
     }
 
+    .logo {
+        display: none; /* Hide the logo on mobile */
+    }
+
     nav ul {
         flex-direction: column;
         width: 100%;
@@ -105,6 +109,10 @@ nav ul li a:hover {
 @media (min-width: 769px) {
     .menu-toggle {
         display: none; /* Hide the menu button on larger screens */
+    }
+
+    .logo {
+        display: block; /* Ensure the logo is visible on larger screens */
     }
 }
 
